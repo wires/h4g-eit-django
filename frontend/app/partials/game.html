@@ -1,0 +1,9 @@
+
+<div id="quiz" ng-show="game.roundType === 'quiz'">
+    <h2>{{game.question.word.word}}</h2>
+    <p ng-repeat='entry in game.question.possible_answers'>
+        <a ng-click="answered(entry)" class="button--secondary">
+            {{entry.answer.translation}}
+        </a>
+    </p>
+</div>

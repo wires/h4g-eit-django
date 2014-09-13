@@ -27,6 +27,7 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
+var path = require('path');
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
@@ -73,8 +74,6 @@ gulp.task('fonts', function () {
     .pipe(gulp.dest('dist/fonts'))
     .pipe($.size({title: 'fonts'}));
 });
-
-
 // Automatically Prefix CSS
 gulp.task('styles:css', function () {
   return gulp.src('app/styles/**/*.css')
@@ -112,8 +111,18 @@ gulp.task('styles:scss', function () {
     .pipe($.size({title: 'styles:scss'}));
 });
 
+gulp.task('styles:less', function () {
+	return gulp.src('app/styles/**/*.less')
+		.pipe($.less({
+			paths: [ path.join(__dirname, 'less', 'includes') ]
+		}))
+		.pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+		.pipe(gulp.dest('.tmp/styles'))
+		.pipe($.size({title: 'styles:less'}));
+});
+
 // Output Final CSS Styles
-gulp.task('styles', ['styles:components', 'styles:scss', 'styles:css']);
+gulp.task('styles', ['styles:components', 'styles:scss', 'styles:less', 'styles:css']);
 
 // Scan Your HTML For Assets & Optimize Them
 gulp.task('html', function () {
@@ -161,6 +170,7 @@ gulp.task('serve', function () {
   });
 
   gulp.watch(['app/**/*.html'], reload);
+  gulp.watch(['app/styles/**/*.less'], ['styles:less']);
   gulp.watch(['app/styles/**/*.scss'], ['styles:components', 'styles:scss']);
   gulp.watch(['{.tmp,app}/styles/**/*.css'], ['styles:css', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['jshint']);

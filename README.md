@@ -7,6 +7,12 @@ Important links:
 
 - Chatroom on hip chat: *EarthIssueTracker (Amsterdam)*
 
+## Extra
+- Pre-hackathon webcasts http://www.spreecast.com/searches?tag=climate%20change
+- https://www.facebook.com/hack4goodAmsterdam
+
+- datasets http://hack4good.thinkdataworks.com/group
+
 ## Preliminary notes:
 
 - That Project Card becomes the tool for judging your app at the end!
@@ -128,7 +134,13 @@ Pre-event Webcast: Wednesday 10 Sep at 10.00 PDT / 13.00 EDT / 18.00 BST / 19.00
 - Results: cleaned up a park
 
 
-# Related
+# Relatedq
+
+## Random
+
+- what is ecological overshoot http://www.footprintnetwork.org/en/index.php/GFN/page/video_overshoot_explained/
+
+
 
 ## Azimuth project
 

@@ -8,4 +8,9 @@ angular.module('myApp.controllers', [])
 			$scope.foo = "hello";
 		}
 	])
+	.controller('IssueController', ['$scope', '$http', '$location',
+		function($scope, $http, $location) {
+			$scope.issue = Issue;
+		}
+	])
 })();

@@ -7,5 +7,3 @@ class CardResource(ModelResource):
     class Meta:
         queryset = Card.objects.all()
         resource_name = 'card'
-
-    

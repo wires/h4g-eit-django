@@ -1,3 +1,18 @@
+# hack hack hack
+
+## modify bootstrap
+
+you need to install grunt
+
+	npm install -g grunt-cli
+
+then navigate to frontend/bootstrap
+
+	npm i
+
+Then modify as you like and `grunt dist`, `grunt watch`
+
+
 # angular-seed-web-starter-kit
 
 A child of:

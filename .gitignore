@@ -1,6 +1,7 @@
 *.pyc
 .idea
 .vagrant
-virtualenv
+venv/
 npm-debug.log
 **/.DS_Store
+

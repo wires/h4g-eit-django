@@ -33,6 +33,7 @@
 
       <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
 
     <!-- endbuild -->
@@ -57,7 +58,16 @@
       <div ng-view>
 
         <div class="wrapper">
-            <div class="topic-card">
+
+          <div class="row">
+
+              <ol class="breadcrumb">
+                  <li><a href="#">Previous topic</a></li>
+              </ol>
+
+          </div>
+
+            <div class="topic-card row">
                 <img class="topic-card-image" src="http://d.ibtimes.co.uk/en/full/1395234/ebola-liberia.jpg" />
 
                 <div class="topic-card-content">                
@@ -81,7 +91,7 @@
                     <hr />
 
                     <div class="topic-card-content-actions">
-                        Stars or any other cool meta Share stuff
+                        Stars or any other cool meta Share stuff <span class="fa fa-search"></span>
                         <button class="btn btn-lg btn-primary pull-right">Expand topic</button>
                         <!--<div class="btn-group">
                             <button class="btn btn-lg btn-default"> <span class="hidden glyphicon glyphicon-star"></span>Support </button>
@@ -93,9 +103,9 @@
 
             </div>
 
-            <div class="topic-child">
+            <div class="topic-child row">
 
-                <div class="topic-child-content">                
+                <div class="col-sm-10 topic-child-content">                
 
                     <h1 class="topic-child-content-title">
                         Ebola in Sierra Leone
@@ -110,6 +120,12 @@
                     </div>
 
                     <hr />
+
+                </div>
+
+                <div class="col-sm-2">    A            
+
+                    <span clas="fa fa-chevron-right"></span>
 
                 </div>
 

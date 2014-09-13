@@ -23,11 +23,11 @@ class Card(models.Model):
     short_description = models.CharField(max_length=1024)
     description       = models.TextField()
     description_html  = models.TextField(editable=False)
-    votes             = models.PositiveIntegerField()
-    actions           = models.PositiveIntegerField()
+    votes             = models.PositiveIntegerField(default=0)
+    actions           = models.PositiveIntegerField(default=0)
 
-    labels            = models.ManyToManyField(Label, related_name="cards")
-    cards             = models.ManyToManyField(Tag, related_name="related")
+    labels            = models.ManyToManyField(Label, related_name="cards", blank=True, null=True)
+    cards             = models.ManyToManyField(Tag, related_name="related", blank=True, null=True)
     
     creator           = models.ForeignKey(settings.AUTH_USER_MODEL, related_name="cards")
     watchers          = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="watched_cards")

@@ -2,22 +2,9 @@
 
 PROJECT="earthissuetracker"
 
-echo "Setting up cron"
-sudo gpasswd -a vagrant cron
-
-createuser ${PROJECT} --createdb
-createdb ${PROJECT} --owner=${PROJECT}
-
-dropdb spirithunter 2> /dev/null
-dropdb ${PROJECT} 2> /dev/null
-
-echo "Creating the new one";
-createdb --encoding=utf8 --owner=vagrant ${PROJECT}
-echo "ALTER SCHEMA public OWNER TO vagrant" | psql ${PROJECT} > /dev/null
-
 cd /opt/virtualenvs
 sudo rm -rf spirithunter
 sudo virtualenv --python=$(which python2.7) ${PROJECT}
 sudo chown -R vagrant:vagrant ${PROJECT}
 . ${PROJECT}/bin/activate
-pip install Django Markdown
+pip install Django Markdown pysqlite

@@ -31,7 +31,7 @@ class Card(models.Model):
     actions           = models.PositiveIntegerField(default=0)
 
     labels            = models.ManyToManyField(Label, related_name="cards", blank=True, null=True)
-    cards             = models.ManyToManyField(Tag, related_name="related", blank=True, null=True)
+    cards             = models.ManyToManyField("Card", related_name="related", blank=True, null=True)
 
     creator           = models.ForeignKey(settings.AUTH_USER_MODEL, related_name="cards")
     watchers          = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="watched_cards")

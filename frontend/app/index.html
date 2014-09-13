@@ -36,6 +36,7 @@
     -->
 
     <!-- build:css styles/components/main.min.css -->
+
     <!--
     <link rel="stylesheet" href="styles/h5bp.css">
     <link rel="stylesheet" href="styles/components/components.css">
@@ -46,17 +47,12 @@
     <!-- endbuild -->
   </head>
   <body>
-  <header class="app-bar promote-layer">
-      <div class="app-bar-container">
-        <button class="menu"><img src="images/hamburger.svg" alt="menu"></button>
-        <h1 class="logo">Wordquiz.tv</h1>
-        <section class="app-bar-actions">
-        <!-- Put App Bar Buttons Here -->
-        </section>
-      </div>
-    </header>
+  <header>
+        <button class="menu" style="display:none"><img src="images/hamburger.svg" alt="menu"></button>
+    <a href="#/topic">Issue tracker</a>
+  </header>
 
-    <nav class="navdrawer-container promote-layer">
+    <nav class="hidden" style="display:none">
       <h4>Navigation</h4>
       <ul>
         <li><a href="#/game">Game</a></li>
@@ -68,8 +64,68 @@
 
     <main>
       <div ng-view>
+
+        <div class="wrapper">
+            <div class="topic-card">
+                <img class="topic-card-image" src="http://d.ibtimes.co.uk/en/full/1395234/ebola-liberia.jpg" />
+
+                <div class="topic-card-content">                
+
+                    <div class="topic-card-content-meta">
+                        <span class="label label-default">label topic</span>
+                    </div>
+
+                    <h1 class="topic-card-content-title">
+                        Ebola in Sierra Leone
+                    </h1>
+
+                    <div class="topic-card-content-author">
+                        Topic author
+                    </div>
+
+                    <p>
+                        Issue description or pitch. Phasellus quis ligula ut enim pretium ornare nec nec est. Vestibulum eget ipsum fringilla, scelerisque velit vel, cursus eros. Curabitur ullamcorper interdum sapien quis pretium. In eget tristique massa. In lacinia risus sed ullamcorper bibendum. Sed consectetur nec sem at venenatis. Integer sed lacinia risus, eu malesuada lectus. In dignissim congue massa, eu eleifend dui tristique maximus. Sed vehicula ante ut mauris vehicula, non laoreet arcu dapibus.
+                    </p>
+
+                    <hr />
+
+                    <div class="topic-card-content-actions">
+                        Stars or any other cool meta Share stuff
+                        <button class="btn btn-lg btn-primary pull-right">Expand topic</button>
+                        <!--<div class="btn-group">
+                            <button class="btn btn-lg btn-default"> <span class="hidden glyphicon glyphicon-star"></span>Support </button>
+                            <button class="btn btn-lg btn-default"> <span class="hidden glyphicon glyphicon-comment"></span> Expand </button>
+                        </div>-->
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="topic-child">
+
+                <div class="topic-child-content">                
+
+                    <h1 class="topic-child-content-title">
+                        Ebola in Sierra Leone
+                    </h1>
+
+                    <div class="topic-child-content-author">
+                        Topic author
+                    </div>
+
+                    <div class="topic-child-content-meta">
+                        <span class="label label-default">label topic</span>
+                    </div>
+
+                    <hr />
+
+                </div>
+
+            </div>
+        </div>
+
       </div>
-      <div>Wordquiz v<span app-version></span></div>
     </main>
     
     <!-- Built with love using Web Starter Kit -->

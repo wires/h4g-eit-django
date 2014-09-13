@@ -88,20 +88,65 @@ header {
   color: #999;
 }
 
+.topic-child {
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  background-color: #fff;
+  margin-top: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.topic-child:hover {
+  background-color: #ecf0f1;
+}
+
+.topic-child-content {
+  padding: 2em 2.75em 2.75em 2.75em;
+}
+
+.topic-child-content-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .btn {
+  border: none;
+  border-radius: 3px;
 }
 
 .btn-primary {
   background-color: #3498db;
-  box-shadow: inset 0 2px #2980b9;
+  box-shadow: inset 0 -2px #2980b9;
+  font-weight: 300;
+  padding: 10px 30px;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-default {
+  background-color: #ecf0f1;
+  box-shadow: inset 0 -2px #bdc3c7;
+}
+
+.label-default { 
+  background-color: #ecf0f1;
+  color: #666;
+  font-weight: 400;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,700,600,400);
 
+/*
 @font-face {
   font-family: 'Roboto Condensed';
   font-style: italic;
   font-weight: 700;
   src: url(/fonts/RobotoCondensed-BoldItalic.eot);
   src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url(/fonts/RobotoCondensed-BoldItalic.eot) format('embedded-opentype'), url(/fonts/RobotoCondensed-BoldItalic.woff) format('woff');
-}
+}*/

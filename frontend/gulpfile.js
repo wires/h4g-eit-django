@@ -15,7 +15,7 @@ gulp.task('less', function () {
 		.pipe($.less())
 //		.pipe($.less({paths: [ path.join(__dirname, 'less', 'includes')]}))
 		.pipe(gulp.dest('.tmp/styles'))
-		.pipe($.size({title: 'styles:less'}));
+		.pipe($.size({title: 'less'}));
 });
 
 // Clean Output Directory
@@ -31,13 +31,12 @@ gulp.task('serve', function () {
   });
 
   gulp.watch(['app/**/*.html'], reload);
-  gulp.watch(['app/styles/**/*.less'], ['styles:less']);
-  gulp.watch(['{.tmp,app}/styles/**/*.css'], ['styles:css', reload]);
-  gulp.watch(['app/scripts/**/*.js'], ['jshint']);
+  gulp.watch(['app/styles/**/*.less'], ['less']);
+  gulp.watch(['{.tmp,app}/styles/**/*.css'], reload);
   gulp.watch(['app/images/**/*', 'bower_components/**/*'], reload);
 });
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', cb);
+  runSequence('less', cb);
 });

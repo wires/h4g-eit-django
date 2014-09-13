@@ -2,5 +2,6 @@ node_modules/
 bower_components/
 dist/
 .sass-cache/
+app/styles/main.css
 .tmp/
 *.log

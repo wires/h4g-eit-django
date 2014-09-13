@@ -1,0 +1,11 @@
+
+
+<div ng-repeat="card in cards">
+
+    {{card.name}}
+
+    <ul>
+        <li ng-repeat="subcard in card.subcards">{{ subcard.name }}</li>
+    </ul>
+
+</div>

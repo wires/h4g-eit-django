@@ -22,7 +22,7 @@ gulp.task('less', function () {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 // Watch Files For Changes & Reload
-gulp.task('serve', function () {
+gulp.task('serve', ['less'], function () {
   browserSync({
     notify: false,
     server: {

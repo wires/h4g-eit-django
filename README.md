@@ -3,7 +3,7 @@
 Important links:
 
 - [Our project card](https://geekli.st/hackathon/hack4good-06/project/54136150df15d8671b562a6d)
-- [This document](https://git.geekli.st/hack4good-2014/brainstorm/blob/master/README.md)
+- [This document](https://github.com/0x01/hack4good-2014)
 
 - Chatroom on hip chat: *EarthIssueTracker (Amsterdam)*
 
@@ -148,6 +148,12 @@ Scientists working together digesting scientific articles and building a wiki.
 - The water crisis
 - Peak oil
 
+
+## 360.org
+
+- http://350.org/category/location/europe/
+- http://350.org/map/
+- 
 
 ## Earth Hour Climate Wiki
 

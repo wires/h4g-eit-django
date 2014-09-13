@@ -31,7 +31,7 @@
     <link rel="shortcut icon" sizes="196x196" href="images/touch/touch-icon-196x196.png">
 
 
-      <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.min.css">
+    <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/font-awesome.min.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -55,9 +55,11 @@
     </nav>
 
     <main>
-      <div ng-view>
-        </div>
+      <div ng-view></div>
     </main>
+
+  <!-- fake some data until backend works -->
+    <script src="scripts/fake.js"></script>
 
     <script src="bower_components/lodash/dist/lodash.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -68,7 +70,6 @@
     <script src="scripts/controllers.js"></script>
     <script src="scripts/filters.js"></script>
     <script src="scripts/directives.js"></script>
-    <script src="scripts/utils.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
     <script>
@@ -80,9 +81,6 @@
       ga('send', 'pageview');
     </script>
   -->
-
-  
-
 
   </body>
 </html>

@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# # vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    vb.customize ["modifyvm", :id, "--usb", "off", "--usbehci", "off"]
+    vb.name = "spirithunter"
+  end
+
+  config.vm.box_url = "https://static.danielquinn.org/spirithunter/Spirithunter.box"
+  config.vm.box_download_checksum = "2d0d41f3970a7a172b740cb6e0894454"
+  config.vm.box_download_checksum_type = "md5"
+  config.vm.box = "earthissuetracker"
+  config.vm.hostname = "earthissuetracker-local"
+  config.vm.boot_timeout = 600
+  if ENV["ALTERNATE_PORT"]
+    config.vm.network "forwarded_port", guest: 8000, host: 8001
+  else
+    config.vm.network "forwarded_port", guest: 8000, host: 8000
+  end
+  config.vm.synced_folder "/opt/earthissuetracker", "/opt/earthissuetracker", create: true
+  config.vm.provision "shell", path: "provision", privileged: false
+
+end

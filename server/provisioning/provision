@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Setting up cron"
+sudo gpasswd -a vagrant cron

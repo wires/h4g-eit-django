@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.name = "earthissuetracker"
   end
 
-  config.vm.box_url = "https://static.danielquinn.org/spirithunter/Spirithunter.box"
+  config.vm.box_url = "https://static.danielquinn.org/hack4good.box"
   config.vm.box_download_checksum = "5b16c654dafc9a9ddaad517c7b9d686b"
   config.vm.box_download_checksum_type = "md5"
   config.vm.box = "earthissuetracker"

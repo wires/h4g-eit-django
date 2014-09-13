@@ -35,12 +35,31 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
+  //background: rgb(57,100,19);
   background: #16a085;
+
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 560px;
+  }
 
   a {
     color: #fff;
   }
 }
+
+//colors
+/*
+Yellow R=255, G=188, B=0
+Green R=57 G=100 B=19
+*/
+
+.item { 
+  width: 250px;
+  margin: 2em 0;
+}
+
 
 .wrapper {
   margin: 2em auto;
@@ -49,6 +68,42 @@ header {
 }
 
 .topic {
+
+  &-grid {
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-color:  #fff;
+
+    &-image {
+      height: 200px;
+    }
+
+    &-title {
+      font-size: 16px;
+      padding: 0 15px;
+      font-weight: 600;
+    }
+
+    &-author {
+      padding: 0 15px;
+
+      li {
+        color: #999;
+        margin-right: 5px;
+        font-size: 11px;
+        line-height: 20px;
+      }
+    }
+
+    &-meta {
+      padding: 0 15px 15px 15px;
+    }
+
+    hr {
+      margin: 15px 0;
+    }
+  }
 
   &-card {
     overflow: hidden;
@@ -174,6 +229,17 @@ header {
   background-color: #2980b9;
 }
 
+.btn-warning {
+  background: rgb(255,188,0);
+  box-shadow: inset 0 -2px #f39c12;
+  font-weight: 300;
+  padding: 10px 30px;
+}
+
+.btn-warning:hover {
+  background-color: #f39c12;
+}
+
 .btn-default {
   background-color: #ecf0f1;
   box-shadow: inset 0 -2px #bdc3c7;
@@ -193,6 +259,8 @@ header {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,700,600,400);
 

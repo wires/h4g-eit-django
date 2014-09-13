@@ -39,31 +39,17 @@
     <!-- endbuild -->
   </head>
   <body>
-  <header>
-    <div class="wrapper">
-      <nav class="pull-left">
-        <ul>
-          <li><a href="#/topic">Issue tracker</a></li>
-        </ul>
-      </nav>
-      Logo
-      <nav class="pull-right">
-        <ul>
-          <li><a href="#/topic">Issue tracker</a></li>
+  <header class="">
+    <div class="wrapper row">
+      <h1 class="pull-left text-hide">Earth Issue Tracker</h1>
+      <nav class="navbar pull-right">
+        <ul class="nav navbar-nav">
+          <li><a href="#/topic">Discover</a></li>
+          <li><a class="nav-modal btn btn-warning" href="#/topic">Create Topic</a></li>
         </ul>
       </nav>
     </div>  
   </header>
-
-    <nav class="hidden" style="display:none">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#/game">Game</a></li>
-        <li><a href="#/log">Log</a></li>
-        <li><a href="#/workset">Working set</a></li>
-        <li><a href="#/list">List</a></li>
-      </ul>
-    </nav>
 
     <main>
       <div ng-view></div>

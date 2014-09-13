@@ -28,7 +28,6 @@ body.open {
 }
 
 header {
-  padding: .75em;
   color: #fff;
   font-size: 1.1em;
   font-weight: bold;
@@ -36,12 +35,44 @@ header {
   text-transform: uppercase;
   text-align: center;
   //background: rgb(57,100,19);
-  background: #16a085;
+  background: rgba(47,47,47,0.98);
+  margin-bottom: 45px;
 
   .wrapper {
     margin: 0 auto;
     width: 100%;
     max-width: 560px;
+    overflow: hidden;
+
+    .nav-modal {
+
+    }
+
+    h1 {
+      width: 100px;
+      height: 100px;
+      display: block;
+      position: absolute;
+      background: url('../images/unnamed.png') no-repeat;
+      background-size: 70px 70px;
+      margin: 0;
+      top: 10px;
+    }
+
+    nav {
+      margin: 0;
+      font-weight: 400;
+      font-size: 14px;
+
+      .menu {
+        padding: 6px 12px;
+      }
+
+      .btn {
+        padding: 8px 16px;
+        margin: 12px 0;
+      }
+    }
   }
 
   a {
@@ -226,7 +257,7 @@ Green R=57 G=100 B=19
 }
 
 .btn-primary:hover {
-  background-color: #2980b9;
+  background-color: #2980b9 !important;
 }
 
 .btn-warning {
@@ -248,8 +279,8 @@ Green R=57 G=100 B=19
   color: #666;
 }
 
-.btn-primary:hover {
-  background-color: #bdc3c7;
+.btn-default:hover {
+  background-color: #bdc3c7!important;
 }
 
 .label-default { 

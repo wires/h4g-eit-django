@@ -1,0 +1,1 @@
+{"virtualbox":{"/opt/earthissuetracker":{"create":true,"guestpath":"/opt/earthissuetracker","hostpath":"/opt/earthissuetracker","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/sarous/Hackathon/hack4good-2014/server/provisioning","disabled":false}}}

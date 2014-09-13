@@ -6,8 +6,12 @@ Important links:
 - [This document](https://github.com/0x01/hack4good-2014)
 
 - Chatroom on hip chat: *EarthIssueTracker (Amsterdam)*
-- Pre-hackathon webcasts http://www.spreecast.com/searches?tag=climate%20change
 
+## Extra
+- Pre-hackathon webcasts http://www.spreecast.com/searches?tag=climate%20change
+- https://www.facebook.com/hack4goodAmsterdam
+
+- datasets http://hack4good.thinkdataworks.com/group
 
 ## Preliminary notes:
 

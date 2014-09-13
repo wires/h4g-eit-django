@@ -23,11 +23,11 @@ angular
 	.config(['$routeProvider',
 		function($routeProvider) {
 			$routeProvider
-				.when('/bar', {
-					templateUrl: 'partials/game.html',
+				.when('/main', {
+					templateUrl: 'partials/main.html',
 					controller: 'ListController'
 				})
-				.otherwise({redirectTo: '/'});
+				.otherwise({redirectTo: '/main'});
 		}
 	]);
 })();

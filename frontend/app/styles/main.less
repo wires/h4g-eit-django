@@ -36,6 +36,10 @@ header {
   text-transform: uppercase;
   text-align: center;
   background: #16a085;
+
+  a {
+    color: #fff;
+  }
 }
 
 .wrapper {
@@ -44,76 +48,119 @@ header {
   max-width: 560px;
 }
 
-.topic-card {
-  overflow: hidden;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.2);
-  background-color: #fff;
+.topic {
+
+  &-card {
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-color:  #fff;
+
+    &-image {
+      height: 450px;
+    }
+
+    &-content {
+      padding: 0 2.75em 2.75em 2.75em;
+
+      &-title {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      &-meta {
+        padding-bottom: 1em;
+        color: #999
+      }
+
+      &-actions {
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: #999;
+
+        .btn-default {
+          padding: 10px 20px;
+          margin-right: 15px;
+        }
+
+        ul {
+          margin-left: 1em;
+        }
+
+        li {
+          font-size: 1.2em;
+          margin-right: 2em;
+          padding-top: 10px;
+
+          .fa {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin: 1.5em 0;
+        color: #999;
+      }
+
+      hr {
+        border: 0;
+        margin: 3em;
+        border-top: 1px solid #eee;
+      }
+    }
+  }
+
+  &-child {
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-color: #fff;
+    margin-top: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+
+    &-content {
+      padding: 1.5em 2.75em 2em 2.75em;
+    
+      &-title {
+        font-size: 18px;
+        font-weight: 600;
+      }     
+
+      &-meta {
+        padding-top: 1em;
+        color: #999;
+
+        .fa { 
+          margin-right: 5px;
+        }
+
+        li {
+          margin-right: 2em;
+        }
+      }
+    }
+
+    &-drill {
+      color: #eee;
+      height: 100%;
+      padding: 2.75em 2.75em 2em 0;
+
+      &:hover {
+        color: #999;
+      }
+    }
+  }
 }
 
-.topic-card-image {
-  height: 450px;
-}
-
-.topic-card-content {
-  padding: 0 2.75em 2.75em 2.75em;
-}
-
-.topic-card-content hr {
-  border: 0;
-  margin: 3em;
-  border-top: 1px solid #eee;
-}
-
-.topic-card-content-title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.topic-card-content p {
-  font-size: 1em;
-  line-height: 1.6;
-  margin: 1.5em 0;
-  color: #999;
-}
-
-.topic-card-content-meta {
-  padding-top: 2em;
-  padding-bottom: 1em;
-  color: #999;
-}
-
-.topic-card-content-actions {
-  padding-bottom: 1em;
-  color: #999;
-}
-
-.topic-child {
-  overflow: hidden;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.2);
-  background-color: #fff;
-  margin-top: 50px;
-  margin-left: 50px;
-  cursor: pointer;
-}
-
-.topic-child:hover {
-  background-color: #ecf0f1;
-}
-
-.topic-child-content {
-  padding: 2em 2.75em 2.75em 2.75em;
-}
-
-.topic-child-content-title {
-  font-size: 18px;
-  font-weight: 600;
-}
 
 .btn {
   border: none;
   border-radius: 3px;
+
 }
 
 .btn-primary {
@@ -130,6 +177,13 @@ header {
 .btn-default {
   background-color: #ecf0f1;
   box-shadow: inset 0 -2px #bdc3c7;
+  font-weight: 300;
+  padding: 10px 30px;
+  color: #666;
+}
+
+.btn-primary:hover {
+  background-color: #bdc3c7;
 }
 
 .label-default { 

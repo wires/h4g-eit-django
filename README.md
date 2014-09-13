@@ -11,6 +11,8 @@ Important links:
 - Pre-hackathon webcasts http://www.spreecast.com/searches?tag=climate%20change
 - https://www.facebook.com/hack4goodAmsterdam
 
+- datasets http://hack4good.thinkdataworks.com/group
+
 ## Preliminary notes:
 
 - That Project Card becomes the tool for judging your app at the end!

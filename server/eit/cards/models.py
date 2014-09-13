@@ -11,6 +11,7 @@ class Label(models.Model):
 
 
 class Card(models.Model):
+
     KIND_ACTION = 1
     KIND_ISSUE  = 2
     KIND_TOPIC  = 3
@@ -19,6 +20,7 @@ class Card(models.Model):
         (KIND_ISSUE,  "Issue"),
         (KIND_TOPIC,  "Topic"),
     )
+
     kind              = models.PositiveIntegerField(choices=KINDS)
     name              = models.CharField(max_length=256)
 
@@ -30,11 +32,12 @@ class Card(models.Model):
 
     labels            = models.ManyToManyField(Label, related_name="cards", blank=True, null=True)
     cards             = models.ManyToManyField(Tag, related_name="related", blank=True, null=True)
-    
+
     creator           = models.ForeignKey(settings.AUTH_USER_MODEL, related_name="cards")
     watchers          = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name="watched_cards")
 
     updated_at        = models.DateTimeField(auto_now=True)
     created_at        = models.DateTimeField(auto_now_add=True)
 
-
+    def __unicode__(self):
+        return self.name

@@ -66,6 +66,13 @@ header {
 
       .menu {
         padding: 6px 12px;
+        margin: 15px;
+        color: #999;
+
+        &:hover {
+          color: #fff;
+          background-color: transparent;
+        }
       }
 
       .btn {
@@ -164,9 +171,10 @@ Green R=57 G=100 B=19
         padding-bottom: 1em;
         color: #999;
 
-        .btn-default {
+        .btn-success {
           padding: 10px 20px;
           margin-right: 15px;
+          color: #fff;
         }
 
         ul {
@@ -268,7 +276,7 @@ Green R=57 G=100 B=19
 }
 
 .btn-warning:hover {
-  background-color: #f39c12;
+  background-color: #f39c12!important;
 }
 
 .btn-default {
@@ -281,6 +289,18 @@ Green R=57 G=100 B=19
 
 .btn-default:hover {
   background-color: #bdc3c7!important;
+}
+
+.btn-success {
+  background-color: #27ae60;
+  box-shadow: inset 0 -2px darken(#27ae60, 10%);
+  font-weight: 300;
+  padding: 10px 30px;
+  color: #666;
+}
+
+.btn-success:hover {
+  background-color: darken(#27ae60, 10%)!important;
 }
 
 .label-default { 

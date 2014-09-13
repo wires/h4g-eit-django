@@ -9,7 +9,8 @@ angular
 	  'myApp.filters',
 	  'myApp.services',
 	  'myApp.directives',
-	  'myApp.controllers'
+	  'myApp.controllers',
+	  'ui.bootstrap'
 	])
 
 	// allow DI for use in controllers, unit tests

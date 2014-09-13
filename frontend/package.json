@@ -5,8 +5,7 @@
   "homepage": "https://github.com/rafriki/angular-seed-web-starter-kit",
   "dependencies": {
     "bower": "1.3.8",
-    "express": "4.7.2",
-    "gulp-less": "^1.3.5"
+    "express": "4.7.2"
   },
   "devDependencies": {
     "browser-sync": "^1.1.2",
@@ -16,10 +15,12 @@
     "gulp-cache": "^0.2.0",
     "gulp-changed": "^0.4.0",
     "gulp-csso": "^0.2.9",
+    "gulp-debug": "^1.0.1",
     "gulp-flatten": "^0.0.2",
     "gulp-if": "^1.2.1",
     "gulp-imagemin": "^0.6.1",
     "gulp-jshint": "^1.6.3",
+    "gulp-less": "^1.3.5",
     "gulp-load-plugins": "^0.5.3",
     "gulp-minify-html": "^0.1.4",
     "gulp-replace": "^0.3.0",

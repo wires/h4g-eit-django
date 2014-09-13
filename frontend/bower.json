@@ -13,6 +13,7 @@
     "angular-cookies": "latest",
     "angular-touch": "latest",
     "angular-ui-utils": "latest",
-	"lodash": "latest"
+    "lodash": "latest",
+    "angular-ui": "~0.4.0"
   }
 }
